@@ -62,7 +62,7 @@ print(output[0].anonymized_text.text)
 
 #### Use anonymization by context
 in this case, initialize HebSafeHarbor object with context.  
-Current sypported contexts: ['imaging', 'general']  
+Current sypported contexts: ['imaging', 'general', 'family']  
 This will make sure that the anonymization will adapt itself to the world of content.
 ```python
 from hebsafeharbor import HebSafeHarbor

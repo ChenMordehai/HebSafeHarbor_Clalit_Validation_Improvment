@@ -14,7 +14,7 @@ class HebSafeHarbor:
     anonymization process and return an anonymized text.
     """
 
-    def __init__(self, context: str = 'imaging', shift_date_function: Optional[tuple] = None):
+    def __init__(self, context: str = 'general', shift_date_function: Optional[tuple] = None):
         """
         Initializes HebSafeHarbor
 
@@ -44,7 +44,8 @@ class HebSafeHarbor:
         :return: anonymized text
         """
         docs = [Doc(doc_dict) for doc_dict in doc_list]
-        docs = self.rec_special_names(docs)
+        if VARIABLES['context'] == 'family':
+            docs = self.rec_special_names(docs)
         docs = self.identify(docs)
         docs = self.anonymize(docs)
         return docs
