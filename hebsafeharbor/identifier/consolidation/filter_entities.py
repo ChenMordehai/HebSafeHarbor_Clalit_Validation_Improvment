@@ -35,10 +35,10 @@ class FilterEntities:
             recognized_entities))
 
         # filter out ORG and NAME entities that contains at least one English letter
-        filtered_entities = list(
-            filter(lambda entity: ENTITY_TYPE_TO_CATEGORY[entity.entity_type] not in ["ORG", "NAME"]
-                                  or FilterEntities.ENGLISH_LETTER_REGEX.search(
-                doc.text[entity.start:entity.end]) is None, filtered_entities))
+        # filtered_entities = list(
+        #     filter(lambda entity: ENTITY_TYPE_TO_CATEGORY[entity.entity_type] not in ["ORG", "NAME"]
+        #                           or FilterEntities.ENGLISH_LETTER_REGEX.search(
+        #         doc.text[entity.start:entity.end]) is None, filtered_entities))
 
         # filter out only symbols entities (doesn't contain at least one of the follows: English letter, Hebrew letter
         # or digit

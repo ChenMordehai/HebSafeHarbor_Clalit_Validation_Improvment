@@ -25,6 +25,11 @@ class IsraeliIdNumberRecognizer(PatternRecognizer):
             r"[0-9]{8}-[0-9]",
             0.6
         ),
+        Pattern(
+            "less than 9 digits israeli id number with a dash before the check digit (the last digit)",
+            r"[0-9]{5,8}\s*-\s*[0-9]",
+            0.6
+        ),
     ]
 
     SUPPORTED_ENTITY = "ISRAELI_ID_NUMBER"
@@ -45,6 +50,7 @@ class IsraeliIdNumberRecognizer(PatternRecognizer):
         :return: A bool indicating whether the validation was successful.
         """
         pattern_text = pattern_text.replace("-", "")
+        pattern_text = pattern_text.replace(" ", "")
         if len(pattern_text) == 8:
             pattern_text = "0" + pattern_text
         check_digit = int(pattern_text[-1])

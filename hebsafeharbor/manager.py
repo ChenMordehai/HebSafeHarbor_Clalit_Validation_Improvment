@@ -1,8 +1,12 @@
-from typing import Dict, List
+from typing import Dict, List, Callable, Optional
+
+import spacy
 
 from hebsafeharbor import Doc
 from hebsafeharbor.anonymizer.phi_anonymizer import PhiAnonymizer
 from hebsafeharbor.identifier.phi_identifier import PhiIdentifier
+from global_variables.global_variables import VARIABLES
+
 
 class HebSafeHarbor:
     """
@@ -10,10 +14,25 @@ class HebSafeHarbor:
     anonymization process and return an anonymized text.
     """
 
-    def __init__(self):
+    def __init__(self, context: str = 'imaging', shift_date_function: Optional[tuple] = None):
         """
         Initializes HebSafeHarbor
+
+        :param context: optional - the medical context. supported contexts: ['imaging', 'general', 'pathology']
+        :param shift_date_function: optional - tuple in the form (callable, params). where callable is the shifting
+                                    function and params are additional parameters to that function(besides the date).
+                                    callable signature: def f(params:any, date_string: string)--> day:string, month:string, year:string
         """
+
+        if context in VARIABLES['supported_contexts']:
+            VARIABLES['context'] = context
+        else:
+            raise AttributeError(f"no context named {context}")
+        if shift_date_function is not None:
+            shift_function, shift_params = shift_date_function
+            if not callable(shift_function):
+                raise TypeError("shift_date_function[0] must be callable (a function)")
+        VARIABLES['shift_date_function'] = shift_date_function
         self.identifier = PhiIdentifier()
         self.anonymizer = PhiAnonymizer()
 
@@ -25,6 +44,7 @@ class HebSafeHarbor:
         :return: anonymized text
         """
         docs = [Doc(doc_dict) for doc_dict in doc_list]
+        docs = self.rec_special_names(docs)
         docs = self.identify(docs)
         docs = self.anonymize(docs)
         return docs
@@ -69,3 +89,23 @@ class HebSafeHarbor:
             "items": items
         }
         return result
+
+    def rec_special_names(self, docs):
+        nlp_names = spacy.load(r"C:\Users\chenmor1\PycharmProjects\HebSafeHarbor_IIA\ner_rec_names")
+        disabled_pipes = []
+        for pipe_name in nlp_names.pipe_names:
+            if pipe_name != 'ner':
+                nlp_names.disable_pipes(pipe_name)
+                disabled_pipes.append(pipe_name)
+        new_docs = []
+        for d in docs:
+            temp_doc = nlp_names(d.text)
+            temp_txt = temp_doc.text
+            for e in temp_doc.ents:
+                if len(e.text)>3:
+                    temp_txt = temp_txt.replace(e.text, "<שם_>")
+            new_doc = {"text": temp_txt}
+            new_docs.append(new_doc)
+        for pipe_name in disabled_pipes:
+            nlp_names.enable_pipe(pipe_name)
+        return [Doc(doc_dict) for doc_dict in new_docs]

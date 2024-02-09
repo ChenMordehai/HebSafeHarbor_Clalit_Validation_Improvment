@@ -30,7 +30,7 @@ class AmbiguousHebrewCityRecognizer(LexiconBasedRecognizer):
         the lexicon phrase itself). Empty list (which means prepositions are not allowed) is the default
         :param endorsing_entities: if recognized entity has overlap with at least one entity from this list,
         its score increases
-        :param context: if any of words in the list are found around entity, its sore increases
+        :param context: if any of words in the list are found around entity, its score increases
         :param default_confidence_level: expected confidence level for this recognizer
         :param location_overlap_factor: enhancement factor for this recognizer if overlap with another geo entity found
         :param context_enhancement_factor: enhancement factor for this recognizer if supportive context found

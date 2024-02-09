@@ -77,7 +77,7 @@ def update_cities_list(limit_records: int = 2000, residents_threshold: int = 200
         "BELOW_THRESHOLD_CITIES_LIST": below,
     }
 
-    save_lists_to_file(d, "../city_utils.py")
+    save_lists_to_file(d, "../city_utils_2.py")
 
 
 if __name__ == "__main__":
