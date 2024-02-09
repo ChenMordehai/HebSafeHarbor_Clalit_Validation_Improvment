@@ -1,0 +1,53 @@
+{
+  "lang":"he",
+  "name":"ner_news_trf",
+  "version":"3.2.1",
+  "spacy_version":">=3.2.2,<3.3.0",
+  "description":"Hebrew pipeline. Components: tok2vec, senter, multihead ner (bmc and nemo).",
+  "author":"hebpsacy",
+  "email":"hebspacy@gmail.com",
+  "url":"https://github.com/8400TheHealthNetwork/HebSpacy",
+  "license":"MIT License (MIT)",
+  "spacy_git_version":"bbaf41fb3",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null,
+    "mode":"default"
+  },
+  "labels":{
+    "sentencizer":[
+
+    ],
+    "transformer":[
+
+    ],
+    "ner":[
+      "NAME"
+    ]
+  },
+  "pipeline":[
+    "sentencizer",
+    "transformer",
+    "ner_bmc",
+    "ner_nemo",
+    "consolidator",
+    "ner"
+  ],
+  "components":[
+    "sentencizer",
+    "transformer",
+    "ner_bmc",
+    "ner_nemo",
+    "consolidator",
+    "ner"
+  ],
+  "disabled":[
+
+  ],
+  "requirements":[
+    "hebspacy>=0.1.2,<0.2.0",
+    "spacy-transformers>=1.1.4,<1.2.0"
+  ]
+}
