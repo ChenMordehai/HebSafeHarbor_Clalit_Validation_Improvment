@@ -1,7 +1,8 @@
 import re
 from typing import List, Tuple, Optional
 import ahocorasick
-
+import ast
+from global_variables.global_variables import VARIABLES
 
 class TermsRecognizer:
 
@@ -12,7 +13,13 @@ class TermsRecognizer:
         """
         self._automaton = ahocorasick.Automaton(ahocorasick.STORE_LENGTH)
         for phrase in phrase_list:
-            self._automaton.add_word(phrase)
+            phrase_after_split = phrase.split(":::")
+            if len(phrase_after_split)>1:
+                p_context = ast.literal_eval(phrase_after_split[1])
+                if VARIABLES['context'] not in p_context:
+                    self._automaton.add_word(phrase)
+            else:
+                self._automaton.add_word(phrase)
         self._automaton.make_automaton()
 
     def __call__(self, text: str, prefixes: Optional[List[str]] = None) -> List[Tuple[int, int]]:
@@ -32,7 +39,7 @@ class TermsRecognizer:
                     prefixes_pattern = r"\W(" + prefixes_pattern_raw + ")"
                     start_cond = offset == 0 or re.match(r"\W", text[offset - 1]) or re.match(prefixes_pattern, text[
                                                                                                                 offset - 2:offset]) or (
-                                             offset == 1 and re.match(prefixes_pattern_raw, text[offset - 1]))
+                                         offset == 1 and re.match(prefixes_pattern_raw, text[offset - 1]))
                 else:
                     start_cond = offset == 0 or re.match(r"\W", text[offset - 1])
                 is_phrase = start_cond \

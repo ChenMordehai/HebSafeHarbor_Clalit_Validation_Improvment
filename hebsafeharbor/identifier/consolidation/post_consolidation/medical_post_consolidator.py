@@ -1,7 +1,6 @@
+import importlib
 from typing import List, Dict, Set
-
 from presidio_analyzer import RecognizerResult
-
 from hebsafeharbor import Doc
 from hebsafeharbor.common.prepositions import DISEASE_PREPOSITIONS, MEDICATION_PREPOSITIONS, MEDICAL_TEST_PREPOSITIONS
 from hebsafeharbor.common.terms_recognizer import TermsRecognizer
@@ -9,7 +8,6 @@ from hebsafeharbor.identifier.consolidation.consolidation_config import CATEGORY
     ENTITY_TYPE_TO_CATEGORY
 from hebsafeharbor.identifier.consolidation.post_consolidation.post_consolidator_rule import PostConsolidatorRule
 from hebsafeharbor.lexicons.healthcare_professional import HEALTHCARE_PROFESSIONAL
-
 
 class MedicalPostConsolidator(PostConsolidatorRule):
     """

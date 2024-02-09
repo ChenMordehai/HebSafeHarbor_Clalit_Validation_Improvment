@@ -10,7 +10,7 @@ class LexiconBasedRecognizer(EntityRecognizer):
     A class which extends the EntityRecognizer (@Presidio) and recognize entities based on a lexicon
     """
 
-    DEFAULT_CONFIDENCE_LEVEL = 0.7  # expected confidence level for this recognizer
+    DEFAULT_CONFIDENCE_LEVEL = 0.85  # expected confidence level for this recognizer
 
     def __init__(self, name: str, supported_entity: str, phrase_list: List[str], supported_language: str = "he",
                  allowed_prepositions: List[str] = None):

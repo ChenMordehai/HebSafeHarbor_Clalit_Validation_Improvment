@@ -1,7 +1,9 @@
+import ast
 from typing import Dict
 
 from presidio_anonymizer.operators import OperatorType, Operator
 
+from global_variables.global_variables import VARIABLES
 from hebsafeharbor.common.city_utils import ABOVE_THRESHOLD_CITIES_LIST, BELOW_THRESHOLD_CITIES_LIST, \
     ABBREVIATIONS_LIST, AMBIGOUS_ABOVE_THRESHOLD_CITIES_LIST, AMBIGOUS_BELOW_THRESHOLD_CITIES_LIST
 
@@ -20,6 +22,7 @@ class IsraeliCityAnonymizerOperator(Operator):
         :param params: optional parameters
         :return: the anonymized text of the entity
         """
+        # TODO: check context
 
         if text in ABOVE_THRESHOLD_CITIES_LIST:
             return text
@@ -31,8 +34,20 @@ class IsraeliCityAnonymizerOperator(Operator):
             return text
         elif text in BELOW_THRESHOLD_CITIES_LIST:
             return "<מיקום_>"
-        else:
-            return "<מיקום_>"
+        return text
+        # # check ambiguous TODO
+        # # elif text in AMBIGOUS_BELOW_THRESHOLD_CITIES_LIST:
+        # amb_list = [item for item in AMBIGOUS_BELOW_THRESHOLD_CITIES_LIST if item.startswith(text)]
+        # for phrase in amb_list:
+        #     phrase_after_split = phrase.split(":::")
+        #     if len(phrase_after_split) > 1:
+        #         p_context = ast.literal_eval(phrase_after_split[1])
+        #         if VARIABLES['context'] not in p_context:
+        #             return text
+        #         else:
+        #             return "<מיקום_>"
+        #     return text
+        # return "<מיקום_>"
 
     def validate(self, params: Dict = None) -> None:
         """

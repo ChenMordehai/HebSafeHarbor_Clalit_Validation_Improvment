@@ -1,18 +1,29 @@
 from typing import Dict
 from datetime import datetime, timedelta
 from presidio_anonymizer.operators import OperatorType, Operator
-
+from global_variables.global_variables import VARIABLES
 from hebsafeharbor.anonymizer.setting import DAY_MASK
 from hebsafeharbor.common.date_utils import extract_date_components, find_pattern
 from hebsafeharbor.common.date_regex import TIME_REGEX
+from dateutil import parser
 
-DAYS_TO_SHIFT = 13
-def shift_day(day_str):
-    day = int(day_str)
-    shifted_day = day - DAYS_TO_SHIFT
-    if shifted_day <= 0:
-        shifted_day += 31
-    return str(shifted_day).zfill(2)
+# def shift_day(date_):
+#     # day = int(day_str)
+#     # shifted_day = day - VARIABLES['days_to_shift']
+#     # if shifted_day <= 0:
+#     #     shifted_day += 31
+#     # return str(shifted_day).zfill(2)
+#     day_str = date_.day.text
+#     month_str = date_.month.text
+#     year_str = date_.year.text
+#     current_date = datetime.strptime(f"{year_str}-{month_str}-{day_str}", "%Y-%m-%d")
+#     shift_days = VARIABLES['days_to_shift']
+#     new_date = current_date + timedelta(days=shift_days)
+#     date_.day.text = new_date.strftime("%d")
+#     date_.month.text = new_date.strftime("%m")
+#     date_.year.text = new_date.strftime("%Y")
+#     return date_.day.text, date_.month.text, date_.year.text
+
 
 class MedicalDateAnonymizerOperator(Operator):
     """
@@ -22,13 +33,15 @@ class MedicalDateAnonymizerOperator(Operator):
 
     def operate(self, text: str, params: Dict = None) -> str:
         """
-        This method applies the anonymization policy of the BirthDateAnonymizerOperator on the given recognized entity text
+        This method applies the anonymization on the given recognized entity text
+        if shift_date_function is given when HebSafeHarbor is initialized, then anonymization process will use
+        shift_date_function[0] function with shift_date_function[1] params on the recognized date
 
         :param text: recognized entity text for anonymization
         :param params: optional parameters
         :return: the anonymized text of the entity
         """
-        
+
         date_container = extract_date_components(text)
         # in case that the components extraction failed, all values will be none - returning the original text
         if date_container.day is None and date_container.month is None and date_container.year is None:
@@ -38,13 +51,20 @@ class MedicalDateAnonymizerOperator(Operator):
                 time_duration = timedelta(hours=3, minutes=32, seconds=41)
                 updated_time = datetime(1, 1, 1, original_hours, original_minutes, original_seconds) + time_duration
                 updated_time_str = updated_time.strftime("%H:%M:%S")
-                return  updated_time_str
+                return updated_time_str
             return text
 
-        # masking
         if date_container.day and date_container.day.text:
-            # date_container.day.text = DAY_MASK
-            date_container.day.text = shift_day(date_container.day.text) # TODO: check if 10 days is ok
+            if VARIABLES['shift_date_function'] is not None:
+                shift_function, params = VARIABLES['shift_date_function']
+                try:
+                    # shift days
+                    date_container.day.text, date_container.month.text, date_container.year.text = shift_function(params, date_container.text)
+                except:
+                    raise ValueError(f"shift_function {shift_function} does not support the output format.")
+            else:
+                # mask
+                date_container.day.text = DAY_MASK
         return date_container.reconstruct_date_string()
 
     def validate(self, params: Dict = None) -> None:

@@ -2,7 +2,8 @@ from enum import Enum
 
 ENTITY_TYPES_TO_IGNORE = {"MONEY", "PERCENT", "MISC__ENT", "MISC_EVENT", "WOA", "EVE", "DUC", "ANG", "MISC__AFF"}
 
-ENTITY_TYPES_TO_POSTPROCESS = {"COUNTRY", "CITY", "DISEASE", "MEDICATION", "MEDICAL_TEST","BODY_PARTS","LAB_TESTS","HOSPITALS","RCOG_MED_TERMS","CAMONI_MED_TERMS","GENS"}
+ENTITY_TYPES_TO_POSTPROCESS = {"COUNTRY", "CITY", "DISEASE", "MEDICATION", "MEDICAL_TEST", "BODY_PARTS", "LAB_TESTS",
+                               "HOSPITALS", "RCOG_MED_TERMS", "CAMONI_MED_TERMS", "GENS"}
 
 ENTITY_TYPE_TO_CATEGORY = {
     "PERS": "NAME",
@@ -32,10 +33,10 @@ ENTITY_TYPE_TO_CATEGORY = {
     "MEDICATION": "MEDICAL",
     "MEDICAL_TEST": "MEDICAL",
     "BODY_PARTS": "BODY_PARTS",
-    "LAB_TESTS":"LAB_TESTS",
-    "CAMONI_MED_TERMS":"MEDICAL",
-    "RCOG_MED_TERMS":"MEDICAL",
-    "GENS":"MEDICAL"
+    "LAB_TESTS": "LAB_TESTS",
+    "CAMONI_MED_TERMS": "MEDICAL",
+    "RCOG_MED_TERMS": "MEDICAL",
+    "GENS": "MEDICAL"
 
 }
 
@@ -49,7 +50,7 @@ CATEGORY_TO_CONTEXT_PHRASES = {
                 "טופלה בחדר אחיות", "להתחיל", "יתחיל", "תתחיל", "נשלח", "נישלח", "יישלח", "גרורות", "סיכום", "החלפה",
                 "להחליף", "הוחלף", "נחליף", "נוסה", "ניסינו", "ניסיון", "מניעה", "בדיקה", "הכנסה", "הוצאה",
                 "הכנסת", "הוצאת", "בשל", "בגלל", "חיסון"],
-    "NAME": ["רופא מפנה:", "נבדק:"]
+    "NAME": ["""פוענח ע"י""", "רופא מפנה", "מבצע", "נבדק"]
 }
 
 
