@@ -1,0 +1,1 @@
+{"0": "[PAD]", "1": "O", "2": "B-PERS", "3": "I-PERS", "4": "B-LOC", "5": "I-LOC", "6": "B-ORG", "7": "I-ORG", "8": "B-TIME", "9": "I-TIME", "10": "B-DATE", "11": "I-DATE", "12": "B-MONEY", "13": "I-MONEY", "14": "B-PERCENT", "15": "I-PERCENT", "16": "B-MISC__AFF", "17": "I-MISC__AFF", "18": "B-MISC__ENT", "19": "I-MISC__ENT", "20": "B-MISC_EVENT", "21": "I-MISC_EVENT"}
