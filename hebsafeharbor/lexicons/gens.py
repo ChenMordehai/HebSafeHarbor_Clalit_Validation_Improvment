@@ -1,0 +1,1 @@
+GENS = ['cosm19404', 'cosm476', 'cosm527', 'cosm460', 'cosm28746', 'cosm21683', 'cosm10995', 'cosm10817', 'cosm28748', 'cosm1330', 'cosm6224', 'cosm512', 'cosm707', 'cosm516', 'cosm754', 'cosm521', 'cosm6223', 'cosm6224', 'cosm760', 'cosm28747', 'cosm28749', 'cosm28746', 'cosm28748', 'cosm28750']
