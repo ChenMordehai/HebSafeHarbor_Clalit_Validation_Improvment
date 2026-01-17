@@ -4,18 +4,102 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d95e0c8f-67db-48f6-9af5-e955b9836e73" name="Changes" comment="" />
+    <list default="true" id="d95e0c8f-67db-48f6-9af5-e955b9836e73" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/AboutVersion1.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/AboutVersion1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/AboutVersion2.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/AboutVersion2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/AboutVersion3.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/AboutVersion3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global_variables/global_variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_variables/global_variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/birth_date_anonymizer_operator.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/birth_date_anonymizer_operator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/country_anonymizer_operator.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/country_anonymizer_operator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/do_not_anonymize_operator.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/do_not_anonymize_operator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/hebrew_replace_anonymizer_operator.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/hebrew_replace_anonymizer_operator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/israeli_city_anonymizer_operator.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/israeli_city_anonymizer_operator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/medical_date_anonymizer_operator.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/anonymizer/custom_operators/medical_date_anonymizer_operator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/anonymizer/phi_anonymizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/anonymizer/phi_anonymizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/anonymizer/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/anonymizer/setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/common/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/common/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/common/city_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/common/city_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/common/country_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/common/country_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/common/date_regex.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/common/date_regex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/common/date_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/common/date_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/common/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/common/document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/common/prepositions.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/common/prepositions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/common/scripts/extract_israeli_cities.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/common/scripts/extract_israeli_cities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/common/terms_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/common/terms_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/conflict_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/conflict_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/consolidation_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/consolidation_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/consolidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/consolidator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/filter_entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/filter_entities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/overlap_resolver.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/overlap_resolver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/post_consolidation/city_country_post_consolidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/post_consolidation/city_country_post_consolidator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/post_consolidation/medical_post_consolidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/post_consolidation/medical_post_consolidator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/post_consolidation/post_consolidator_rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/consolidation/post_consolidation/post_consolidator_rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_score_fixer/entity_score_fixer_rule_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_score_fixer/entity_score_fixer_rule_executor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_smoother/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_smoother/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_smoother/entity_smoother_rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_smoother/entity_smoother_rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_smoother/entity_smoother_rule_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_smoother/entity_smoother_rule_executor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_smoother/location_merger_rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_smoother/location_merger_rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_spliters/date_entity_splitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_spliters/date_entity_splitter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_spliters/entity_splitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_spliters/entity_splitter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_spliters/entity_splitter_rule_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/entity_spliters/entity_splitter_rule_executor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/heb_nlp_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/heb_nlp_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/phi_identifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/phi_identifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/general_id_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/general_id_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/heb_date_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/heb_date_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/heb_latin_date_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/heb_latin_date_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/heb_preposition_date_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/heb_preposition_date_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/hebrew_city_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/hebrew_city_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/israeli_id_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/israeli_id_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/lexicon_based_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/lexicon_based_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/medical_staff_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/medical_staff_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/noisy_date_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/noisy_date_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/pathology_id_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/pathology_id_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/spacy_recognizer_with_confidence.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/spacy_recognizer_with_confidence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/special_name_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/identifier/signals/special_name_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/body_parts.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/body_parts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/camoni_med_terms.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/camoni_med_terms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/disease.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/disease.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/gens.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/gens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/healthcare_professional.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/healthcare_professional.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/healthcare_professional_staff.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/healthcare_professional_staff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/hospital_lexicon.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/hospital_lexicon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/lab_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/lab_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/medical_device.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/medical_device.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/medical_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/medical_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/medications.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/medications.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/lexicons/rcog_med_terms.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/lexicons/rcog_med_terms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hebsafeharbor/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/hebsafeharbor/version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Josh_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Josh_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/chen_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/chen_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_city_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_city_recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_spacy_recognizer_with_confidence.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_spacy_recognizer_with_confidence.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2o3y0FBsuQuFNhZ0OKeXh4naupc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,6 +110,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "v4",
     "last_opened_file_path": "D:/HebSafeHarbor_IIA",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
@@ -40,5 +125,16 @@
       <updated>1730112328884</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

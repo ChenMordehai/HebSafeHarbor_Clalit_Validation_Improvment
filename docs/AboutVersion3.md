@@ -34,16 +34,14 @@ Anonymized text:
  ## Accuracy metrics
 
 ### C.T
-<img src="./images/500_ct_accuracy_v3.png" alt="500_ct_accuracy_v3" width="550"/>  
-<br></br>
-<img src="./images/comparison_lack_anonymization_500_ct_v3.png" alt="comparison_lack_anonymization_500_ct_v3" width="500"/> 
-<img src="./images/comparison_over_anonymization_500_ct_v3.png" alt="comparison_over_anonymization_500_ct_v3" width="350"/> 
+![Accuracy](./images/500_ct_accuracy_v3.png)  
+![comparison_lack_anonymization](./images/comparison_lack_anonymization_500_ct_v3.png)
+![comparison_over_anonymization](./images/comparison_over_anonymization_500_ct_v3.png)  
 
 ### Pathology
-<img src="./images/500_ct_accuracy_v3.png" alt="500_pathology_accuracy_v3" width="550"/>  
-<br></br>
-<img src="./images/comparison_lack_anonymization_500_ct_v3.png" alt="comparison_lack_anonymization_500_pathology_v3" width="500"/> 
-<img src="./images/comparison_over_anonymization_500_ct_v3.png" alt="comparison_over_anonymization_500_pathology_v3" width="350"/> 
+![Accuracy](./images/500_pathology_accuracy_v3.png)  
+![comparison_lack_anonymization](./images/comparison_lack_anonymization_500_pathology_v3.png)
+![comparison_over_anonymization](./images/comparison_over_anonymization_500_pathology_v3.png)  
 
   
 An example of a true positive(TP):   

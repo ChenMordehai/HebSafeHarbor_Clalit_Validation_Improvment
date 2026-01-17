@@ -22,7 +22,7 @@ def shift_day(params,date_):
     return "01", "01", "2000"
 
 
-hsh = HebSafeHarbor(context='pathology') #context='pathology'
+hsh = HebSafeHarbor() #context='pathology'
 
 text = """
 """
