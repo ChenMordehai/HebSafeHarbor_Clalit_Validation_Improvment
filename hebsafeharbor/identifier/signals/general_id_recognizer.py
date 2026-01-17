@@ -8,8 +8,8 @@ class GeneralIdRecognizer(PatternRecognizer):
 
     PATTERNS = [
         Pattern(
-            "five or more digits optionally separated by dash",
-            r"(\d[-]?){4,}\d",
+            "6 or more digits optionally separated by dash",
+            r"(\d[-]?){5,}\d",
             0.6)
     ]
 

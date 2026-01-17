@@ -2,7 +2,7 @@ from typing import List
 from presidio_analyzer import EntityRecognizer, RecognizerResult, AnalysisExplanation
 from presidio_analyzer.nlp_engine import NlpArtifacts
 
-from hebsafeharbor.common.terms_recognizer import TermsRecognizer
+from hebsafeharbor.common.fuzzy_terms_recognizer import TermsRecognizer
 
 
 class LexiconBasedRecognizer(EntityRecognizer):

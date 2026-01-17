@@ -1,7 +1,7 @@
 ![alt text](./docs/images/header_logo.png)
 
 # HebSafeHarbor - CLALIT Validation  
-#### ***(version 3)***  
+#### ***(version 4)***  
   
   
 A de-identification toolkit for clinical text in Hebrew.  
@@ -24,7 +24,7 @@ The toolkit integrates and uses open source libraries and assets, including [Heb
 
 Make sure you have [Anaconda](https://www.anaconda.com/download) installed on your computer.
 
-1. Unpack the [`packedhebsafeharbor.zip`](https://drive.google.com/file/d/1MgS-4eo4_HP_wup58ud3JdA82sZ0bFCv/view?usp=sharing) directory to where you want the environment to go(usually at - **C:\Users\\..\Anaconda3\envs**).
+1. Unpack the [`packedhebsafeharbor.zip`](https://drive.google.com/file/d/1mDJtSx3z8Pmy0TSL3yobFAAVzOjwm2Qd/view?usp=drive_link) directory to where you want the environment to go(usually at - **C:\Users\\..\Anaconda3\envs**).
 2. Open the standard Command Prompt (cmd.exe) on Windows.
 3. Run:
 
@@ -128,7 +128,7 @@ print(output[0].anonymized_text.text)
 # <שם_> התאשפזה ב19.02.2012
 ```
 ## Versions  
-current - [About version 3](docs/AboutVersion3.md)  
+current - Version 4
 
 
 ## Special Thanks
